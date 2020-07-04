@@ -37,7 +37,7 @@ function fadeInScroll(){
     let y = window.scrollY;
     
     // If the scroll value is greater than the window height, let's add a class to the scroll-to-top button to show it!
-    if (y > 200) {
+    if (y > 700) {
       socialButtons.className = "show";
     } else {
       socialButtons.className = "hide";

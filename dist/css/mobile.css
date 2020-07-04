@@ -12,7 +12,6 @@
 
   .section-heading {
     color: var(--text-dark);
-    margin-bottom: 1.8rem;
     font-size: 2.4rem;
     line-height: 2.2rem;
     margin-bottom: 2rem;
@@ -73,6 +72,10 @@
 
 
   /* Section 1: Postres */
+  #postres .section-heading {
+    margin-top: 2rem;
+  }
+
   .cards {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -83,9 +86,9 @@
 
   /* Social Bar */
   #social-bar {
-    min-width: 8vw;
-    position: sticky;
-    top: 87vh;
+    width: 30px;
+    position: fixed;
+    top: 11vh;
     display: inline-block;
     margin-left: 0.1em;
     margin-top: 0.5rem;
@@ -96,10 +99,10 @@
   #social-bar a {
     display: block;
     text-align: center;
-    padding: 0.8vw;
+    padding: 5px;
     transition: all 0.3s ease;
     color: white;
-    font-size: 3.9vw;
+    font-size: 15px;
     border-radius: 15%;
     margin-left: 0.1rem;
   }
@@ -132,6 +135,11 @@
   #grid-container {
     grid-template-columns: 1fr;
     grid-gap: 0.2rem;
+    margin-bottom: 5rem;
+  }
+
+  #nosotros .section-heading {
+    margin-bottom: 0;
   }
 
   .content-container,
@@ -140,7 +148,7 @@
   }
 
   .content-container {
-    padding-bottom: 7rem;
+    padding: 1.5rem;
   }
 
   .content-container p {
@@ -220,5 +228,15 @@
   .content-container p {
     font-size: 1rem;
     margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-height: 500px) {
+  .nav-wrapper {
+    height: 15vh;
+  }
+
+  #social-bar {
+    top: 16vh;
   }
 }
